@@ -2,8 +2,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var diceImgViewOne: UIImageView!
-    @IBOutlet weak var diceImgViewTwo: UIImageView!
+    @IBOutlet weak var diceImageViewOne: UIImageView!
+    @IBOutlet weak var diceImageViewTwo: UIImageView!
     
     @IBAction func rollButtonPressed(_ sender: UIButton) {
        
@@ -14,9 +14,9 @@ class ViewController: UIViewController {
                          UIImage(named: "DiceFive"),
                          UIImage(named: "DiceSix")]
         
-        diceImgViewOne.image = diceArray[Int.random(in: 0 ... 5)]
+        diceImageViewOne.image = diceArray[Int.random(in: 0 ... 5)]
         
-        diceImgViewTwo.image = diceArray[Int.random(in: 0 ... 5)]
+        diceImageViewTwo.image = diceArray[Int.random(in: 0 ... 5)]
     
     }
 }
